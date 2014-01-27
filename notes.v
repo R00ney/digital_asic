@@ -44,6 +44,7 @@ in = 4'b0010;
 #16 latch =1;
 #10 latch = 0;
 #10 dec = 1;
+# if (!zero) $display("error in zero flag\n");
 # 100 $finish;
 end
 allways #5 clock100 = ~clock100; //10ns clock
